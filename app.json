@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "NityaFit",
+    "slug": "mvp-fitness",
+    "version": "1.0.0",
+    "scheme": "nityafit",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f0f0f"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f0f0f"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "WRITE_EXTERNAL_STORAGE",
+        "VIBRATE",
+        "SCHEDULE_EXACT_ALARM"
+      ],
+      "package": "com.nityafit.app",
+      "useNextNotificationsApi": true,
+      "notification": {
+        "icon": "./assets/notification-icon.png",
+        "color": "#FF5722",
+        "channelId": "fitness-daily"
+      }
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "00000000-0000-0000-0000-000000000000"
+      }
+    }
+  }
+}
